@@ -1,0 +1,13 @@
+{
+  "item.mythos.ruby": "Ruby",
+
+  "block.mythos.ruby_block": "Ruby Block",
+  "block.mythos.writhing_rock": "Writhing Rock",
+  "block.mythos.nether_ruby_ore": "Nether Ruby Ore",
+  "block.mythos.ruby_ore": "Ruby Ore",
+
+  "block.mythos.sacred_log": "Sacred Log",
+
+  "itemgroup.ruby": "Ruby Mythos Group"
+
+}

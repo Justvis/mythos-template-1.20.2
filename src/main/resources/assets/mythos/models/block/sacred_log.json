@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "mythos:block/sacred_log_top",
+    "side": "mythos:block/sacred_log"
+  }
+}

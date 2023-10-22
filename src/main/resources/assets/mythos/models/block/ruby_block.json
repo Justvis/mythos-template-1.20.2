@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures" : {
+    "all": "mythos:block/ruby_block"
+  }
+}

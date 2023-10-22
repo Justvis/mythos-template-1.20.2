@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "mythos:block/ruby_block"
+    }
+  }
+}
