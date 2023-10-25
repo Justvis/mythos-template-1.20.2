@@ -16,16 +16,27 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
-        // Can use differen _MINEABLE traits
+        // Can use different MINEABLE traits
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.WRITHING_ROCK)
-                .add(ModBlocks.RUBY_ORE);
 
-        // Use NEEDS ___ Tool respectively
+                // Ores
+                .add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE)
+                .add(ModBlocks.RUBY_ORE)
+                .add(ModBlocks.NETHER_RUBY_ORE)
+                .add(ModBlocks.CELESTIAL_ORE)
+                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
+
+
+        // Mining Difficulty
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.NETHER_RUBY_ORE);
+                .add(ModBlocks.NETHER_RUBY_ORE)
+                .add(ModBlocks.CELESTIAL_ORE)
+                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
+
     }
 }

@@ -1,0 +1,4 @@
+// 1.20.2	2023-10-25T18:10:21.5546332	Mythos/Tags for minecraft:block
+9690df22883edf9cbef637767d3b468632216bbf data\minecraft\tags\blocks\needs_iron_tool.json
+e4662b949fe074d74b491199af1437c363ca47b8 data\minecraft\tags\blocks\mineable\pickaxe.json
+ad8fed221ae3b93d1d3531613ae6936c3a2d925b data\minecraft\tags\blocks\needs_stone_tool.json

@@ -1,13 +1,23 @@
 {
   "item.mythos.ruby": "Ruby",
+  "item.mythos.dreamshard": "Dreamshard",
+  "item.mythos.raw_celestial": "Raw Celestial",
+  "item.mythos.celestial_ingot": "Celestial Ingot",
+
+  "item.mythos.celestial_berries": "Celestial Berries",
 
   "block.mythos.ruby_block": "Ruby Block",
   "block.mythos.writhing_rock": "Writhing Rock",
+
+
   "block.mythos.nether_ruby_ore": "Nether Ruby Ore",
   "block.mythos.ruby_ore": "Ruby Ore",
+  "block.mythos.deepslate_dreamshard_ore": "Deepslate Dreamshard Ore",
+  "block.mythos.deepslate_celestial_ore": "Deepslate Celestial Ore",
+  "block.mythos.celestial_ore": "Celestial Ore",
 
   "block.mythos.sacred_log": "Sacred Log",
 
-  "itemgroup.ruby": "Ruby Mythos Group"
+  "itemgroup.mythos.itemgroup": "Mythos"
 
 }

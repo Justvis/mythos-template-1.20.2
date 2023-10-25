@@ -21,10 +21,18 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
     public static final Block WRITHING_ROCK = registerBlock("writhing_rock",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+
+    // Ores
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(2,5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.0f), UniformIntProvider.create(2,5)));
     public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2f), UniformIntProvider.create(3,5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.0f), UniformIntProvider.create(3,5)));
+    public static final Block DEEPSLATE_DREAMSHARD_ORE = registerBlock("deepslate_dreamshard_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE), UniformIntProvider.create(3,5)));
+    public static final Block CELESTIAL_ORE = registerBlock("celestial_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(3.0F, 3.0F)));
+    public static final Block DEEPSLATE_CELESTIAL_ORE = registerBlock("deepslate_celestial_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(3.0F, 3.0F)));
 
     //Wood
     public static final Block SACRED_LOG = registerBlock("sacred_log",

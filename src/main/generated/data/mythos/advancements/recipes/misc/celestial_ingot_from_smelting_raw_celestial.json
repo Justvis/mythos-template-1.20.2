@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_celestial": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mythos:raw_celestial"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:celestial_ingot_from_smelting_raw_celestial"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_celestial"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:celestial_ingot_from_smelting_raw_celestial"
+    ]
+  },
+  "sends_telemetry_event": false
+}

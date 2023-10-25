@@ -13,6 +13,7 @@ import java.util.List;
 public class ModRecipeProvider extends FabricRecipeProvider {
 
     private static final List<ItemConvertible> RUBY_SMELTABLES = List.of(ModBlocks.RUBY_ORE, ModBlocks.NETHER_RUBY_ORE);
+    private static final List<ItemConvertible> CELESTIAL_SMELTABLES = List.of(ModBlocks.DEEPSLATE_CELESTIAL_ORE, ModBlocks.CELESTIAL_ORE, ModItems.RAW_CELESTIAL);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -20,7 +21,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter exporter) {
+
+        // ======= Smelting / Blasting ======
         offerSmelting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.7f, 200, "ruby");
         offerBlasting(exporter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY, 0.7f, 200, "ruby");
+
+        offerSmelting(exporter, CELESTIAL_SMELTABLES, RecipeCategory.MISC, ModItems.CELESTIAL_INGOT, 0.7f, 200, "celestial");
+        offerBlasting(exporter, CELESTIAL_SMELTABLES, RecipeCategory.MISC, ModItems.CELESTIAL_INGOT, 0.7f, 200, "celestial");
     }
 }

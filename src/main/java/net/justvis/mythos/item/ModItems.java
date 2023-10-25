@@ -12,13 +12,23 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
+    //Items
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item DREAMSHARD = registerItem("dreamshard", new Item(new FabricItemSettings()));
+    public static final Item RAW_CELESTIAL = registerItem("raw_celestial", new Item(new FabricItemSettings()));
+    public static final Item CELESTIAL_INGOT = registerItem("celestial_ingot", new Item(new FabricItemSettings()));
 
+    //Food
+    public static final Item CELESTIAL_BERRIES = registerItem("celestial_berries", new Item(new FabricItemSettings().food(ModFoodComponents.CELESTIAL_BERRIES)));
+
+
+
+    // adding to minecraft tabs
     private static void addItemsToNaturalTab(FabricItemGroupEntries entry) {
-        entry.add(RUBY);
+        //entry.add(RUBY);
     }
     private static void addItemsIngredientToTab(FabricItemGroupEntries entry) {
-        entry.add(RUBY);
+        //entry.add(RUBY);
     }
 
     private static Item registerItem(String name, Item item) {

@@ -15,14 +15,29 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+
+        //Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WRITHING_ROCK);
+
+        //Ores
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CELESTIAL_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+
+        //Items
         itemModelGenerator.register(ModItems.RUBY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DREAMSHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_CELESTIAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CELESTIAL_INGOT, Models.GENERATED);
+
+        //Foods
+        itemModelGenerator.register(ModItems.CELESTIAL_BERRIES, Models.GENERATED);
     }
 }

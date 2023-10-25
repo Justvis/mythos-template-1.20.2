@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mythos:ruby_ore",
+    "mythos:nether_ruby_ore",
+    "mythos:celestial_ore",
+    "mythos:deepslate_celestial_ore"
+  ]
+}
