@@ -26,6 +26,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CELESTIAL_ORE);
+
+        // Entities
+        blockStateModelGenerator.registerSimpleState(ModBlocks.GEODE_CRUSHER);
     }
 
     @Override

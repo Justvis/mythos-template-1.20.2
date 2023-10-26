@@ -40,6 +40,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
                         entries.add(ModBlocks.CELESTIAL_ORE);
 
+                        //Block Entity
+                        entries.add(ModBlocks.GEODE_CRUSHER);
+
                         entries.add(ModBlocks.SACRED_LOG);
 
                     }).build());

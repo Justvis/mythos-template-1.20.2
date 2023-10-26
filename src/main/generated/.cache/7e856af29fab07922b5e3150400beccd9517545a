@@ -1,9 +1,9 @@
-// 1.20.2	2023-10-25T18:10:21.5566341	Mythos/Model Definitions
+// 1.20.2	2023-10-26T01:52:03.2374752	Mythos/Model Definitions
 37ef569c6852fcf88115644f09d9bf43dc0294c7 assets\mythos\models\item\raw_celestial.json
 fb2db6e2748d6a93340519120702cd866fa09c09 assets\mythos\blockstates\celestial_ore.json
 1ded44974a750968ad892350928e7bda31331f1f assets\mythos\blockstates\deepslate_celestial_ore.json
-ca82670c3024ec167173bff9cb005efacb31fc5d assets\mythos\models\item\celestial_ingot.json
 cf8c610aa921ddd6f094bbf75418624f51e58779 assets\mythos\models\block\nether_ruby_ore.json
+ca82670c3024ec167173bff9cb005efacb31fc5d assets\mythos\models\item\celestial_ingot.json
 6075fb8d79d2c75d8a72cc6c187bfeb62ffe4d2d assets\mythos\models\item\deepslate_dreamshard_ore.json
 f804f744493c7377ca4d9a51b69ed3420c130659 assets\mythos\models\block\deepslate_dreamshard_ore.json
 6fbda44d7e9da397467729c929af6710c5af164b assets\mythos\blockstates\nether_ruby_ore.json
@@ -16,6 +16,7 @@ ae066fbfc84edad3df02e5d3cd7e216e912ab2c1 assets\mythos\models\item\ruby_ore.json
 41cb176f202b38d9afcb9dea2efb44f7fa172330 assets\mythos\blockstates\ruby_ore.json
 b618506cc5c790809489761581a90d9ca4eec883 assets\mythos\models\item\ruby_block.json
 0cb875a85b4143b373aecb8a1b1a27791c898b9b assets\mythos\models\block\writhing_rock.json
+da0a7c4034986ee2be0140472a8c8ba5b6f55383 assets\mythos\blockstates\geode_crusher.json
 cd6ad40a28bc19c1641ee047b8f41db66ff87be5 assets\mythos\blockstates\deepslate_dreamshard_ore.json
 4f8f632dd87753761ff4250959e72a6aa01075d4 assets\mythos\blockstates\ruby_block.json
 515759ccdae994a11cbf3839160f362c5e5ac978 assets\mythos\models\item\dreamshard.json
@@ -24,4 +25,5 @@ cd6ad40a28bc19c1641ee047b8f41db66ff87be5 assets\mythos\blockstates\deepslate_dre
 f1071b033cee6d3b208837864481729eee4d18a1 assets\mythos\blockstates\writhing_rock.json
 98abc3db3c53ea05da59d1852ffba2467a60bf13 assets\mythos\models\block\ruby_ore.json
 c3234b0882c6fd64f5762854bd98fbf9a74e540a assets\mythos\models\item\writhing_rock.json
+765fd0a3a68fed888dc89d71d090ad36835d3b57 assets\mythos\models\item\geode_crusher.json
 44f1c1b2f95eb03cb3f8e2e12f8ace65063c934b assets\mythos\models\item\nether_ruby_ore.json

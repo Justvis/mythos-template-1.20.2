@@ -2,9 +2,11 @@ package net.justvis.mythos;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.justvis.mythos.block.entity.ModBlockEntities;
 import net.justvis.mythos.item.ModItemGroups;
 import net.justvis.mythos.item.ModItems;
 import net.justvis.mythos.block.ModBlocks;
+import net.justvis.mythos.screen.ModScreenHandlers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +23,9 @@ public class Mythos implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 		//LOGGER.info("Hello Fabric world!");
 	}
 }
