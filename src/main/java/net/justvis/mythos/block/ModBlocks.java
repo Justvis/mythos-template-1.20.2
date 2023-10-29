@@ -4,10 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.justvis.mythos.Mythos;
 import net.justvis.mythos.block.custom.GeodeCrusherBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.PillarBlock;
+import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -22,6 +20,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
     public static final Block WRITHING_ROCK = registerBlock("writhing_rock",
             new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
+    public static final Block CURSED_SAND = registerBlock("cursed_sand",
+            new Block(FabricBlockSettings.copyOf(Blocks.SAND)));
 
     //Block Entity
     public static final Block GEODE_CRUSHER = registerBlock("geode_crusher",
@@ -38,6 +38,16 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(3.0F, 3.0F)));
     public static final Block DEEPSLATE_CELESTIAL_ORE = registerBlock("deepslate_celestial_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(3.0F, 3.0F)));
+    public static final Block DEEPSLATE_PRIMAL_GEODE_ORE = registerBlock("deepslate_primal_geode_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2.0F, 2.0F)));
+    public static final Block PRIMAL_GEODE_ORE = registerBlock("primal_geode_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2.0F, 2.0F)));
+
+    // ======= Flowers/Crops =======
+    public static final Block TEAR_LOTUS = registerBlock("tear_lotus",
+            new FlowerBlock(StatusEffects.LEVITATION, 10, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
+    public static final Block POTTED_TEAR_LOTUS = Registry.register(Registries.BLOCK, new Identifier(Mythos.MOD_ID, "potted_tear_lotus"),
+            new FlowerPotBlock(TEAR_LOTUS, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
 
     //Wood
     public static final Block SACRED_LOG = registerBlock("sacred_log",

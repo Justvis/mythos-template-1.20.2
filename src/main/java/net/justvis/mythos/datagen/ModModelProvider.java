@@ -19,6 +19,7 @@ public class ModModelProvider extends FabricModelProvider {
         //Blocks
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WRITHING_ROCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CURSED_SAND);
 
         //Ores
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
@@ -26,6 +27,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CELESTIAL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PRIMAL_GEODE_ORE);
+
+        //Flowers / Crops
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.TEAR_LOTUS, ModBlocks.POTTED_TEAR_LOTUS, BlockStateModelGenerator.TintType.NOT_TINTED);
 
         // Entities
         blockStateModelGenerator.registerSimpleState(ModBlocks.GEODE_CRUSHER);
@@ -39,6 +45,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DREAMSHARD, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_CELESTIAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CELESTIAL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRIMAL_GEODE, Models.GENERATED);
+
+        //Glyphs
+        itemModelGenerator.register(ModItems.INERT_GLYPH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AERO_GLYPH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AQUA_GLYPH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TERRA_GLYPH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PYRO_GLYPH, Models.GENERATED);
+
 
         //Foods
         itemModelGenerator.register(ModItems.CELESTIAL_BERRIES, Models.GENERATED);

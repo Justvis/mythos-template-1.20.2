@@ -17,6 +17,14 @@ public class ModItems {
     public static final Item DREAMSHARD = registerItem("dreamshard", new Item(new FabricItemSettings()));
     public static final Item RAW_CELESTIAL = registerItem("raw_celestial", new Item(new FabricItemSettings()));
     public static final Item CELESTIAL_INGOT = registerItem("celestial_ingot", new Item(new FabricItemSettings()));
+    public static final Item PRIMAL_GEODE = registerItem("primal_geode", new Item(new FabricItemSettings()));
+
+    //Glyphs
+    public static final Item INERT_GLYPH = registerItem("inert_glyph", new Item(new FabricItemSettings()));
+    public static final Item PYRO_GLYPH = registerItem("pyro_glyph", new Item(new FabricItemSettings()));
+    public static final Item TERRA_GLYPH = registerItem("terra_glyph", new Item(new FabricItemSettings()));
+    public static final Item AERO_GLYPH = registerItem("aero_glyph", new Item(new FabricItemSettings()));
+    public static final Item AQUA_GLYPH = registerItem("aqua_glyph", new Item(new FabricItemSettings()));
 
     //Food
     public static final Item CELESTIAL_BERRIES = registerItem("celestial_berries", new Item(new FabricItemSettings().food(ModFoodComponents.CELESTIAL_BERRIES)));

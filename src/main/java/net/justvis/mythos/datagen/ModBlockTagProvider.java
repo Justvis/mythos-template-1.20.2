@@ -26,15 +26,21 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.CELESTIAL_ORE)
-                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
+                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE)
+                .add(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE)
+                .add(ModBlocks.PRIMAL_GEODE_ORE);
 
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+            .add(ModBlocks.CURSED_SAND);
 
         // Mining Difficulty
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_ORE)
                 .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.CELESTIAL_ORE)
-                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
+                .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE)
+                .add(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE)
+                .add(ModBlocks.PRIMAL_GEODE_ORE);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
 

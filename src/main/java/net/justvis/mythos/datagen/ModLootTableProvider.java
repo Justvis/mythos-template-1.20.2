@@ -26,6 +26,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
             addDrop(ModBlocks.RUBY_BLOCK);
             addDrop(ModBlocks.WRITHING_ROCK);
+            addDrop(ModBlocks.CURSED_SAND);
 
             //Ore Behavior
             addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY));
@@ -33,6 +34,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
             addDrop(ModBlocks.DEEPSLATE_DREAMSHARD_ORE, diamondLikeOreDrops(ModBlocks.DEEPSLATE_DREAMSHARD_ORE, ModItems.DREAMSHARD));
             addDrop(ModBlocks.DEEPSLATE_CELESTIAL_ORE, ironLikeOreDrops(ModBlocks.DEEPSLATE_CELESTIAL_ORE, ModItems.RAW_CELESTIAL));
             addDrop(ModBlocks.CELESTIAL_ORE, ironLikeOreDrops(ModBlocks.CELESTIAL_ORE, ModItems.RAW_CELESTIAL));
+            addDrop(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE, ironLikeOreDrops(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE, ModItems.PRIMAL_GEODE));
+            addDrop(ModBlocks.PRIMAL_GEODE_ORE, ironLikeOreDrops(ModBlocks.PRIMAL_GEODE_ORE, ModItems.PRIMAL_GEODE));
+
+            addDrop(ModBlocks.TEAR_LOTUS);
+            addPottedPlantDrops(ModBlocks.POTTED_TEAR_LOTUS);
 
     }
 
