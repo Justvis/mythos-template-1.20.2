@@ -10,9 +10,7 @@ import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
-import org.jetbrains.annotations.Nullable;
 
 public class GeodeCrusherScreenHandler extends ScreenHandler {
 private final Inventory inventory;
@@ -32,8 +30,12 @@ public final GeodeCrusherBlockEntity blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((GeodeCrusherBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 0, 80, 11));
-        this.addSlot(new Slot(inventory, 1, 80, 59));
+        this.addSlot(new Slot(inventory, 0, 98, 11));
+        //this.addSlot(new Slot(inventory, 3, 80, 11));
+        this.addSlot(new OutputSlot(inventory, 1, 80, 59));
+        this.addSlot(new OutputSlot(inventory, 2, 98, 59));
+        //this.addSlot(new Slot(inventory, 3, 116, 59));
+        this.addSlot(new OutputSlot(inventory, 3, 116, 59));
 
 
         addPlayerInventory(playerInventory);
@@ -41,8 +43,6 @@ public final GeodeCrusherBlockEntity blockEntity;
 
         addProperties(arrayPropertyDelegate);
     }
-
-
 
     @Override
     public ItemStack quickMove(PlayerEntity player, int invSlot) {
@@ -85,6 +85,7 @@ public final GeodeCrusherBlockEntity blockEntity;
     public boolean canUse(PlayerEntity player) {
         return this.inventory.canPlayerUse(player);
     }
+
 
     private void addPlayerInventory(PlayerInventory playerInventory) {
         for (int i = 0; i < 3; ++i) {

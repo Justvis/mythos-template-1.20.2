@@ -3,6 +3,7 @@ package net.justvis.mythos.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.justvis.mythos.block.ModBlocks;
+import net.justvis.mythos.block.custom.SageCropBlock;
 import net.justvis.mythos.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -32,6 +33,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Flowers / Crops
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.TEAR_LOTUS, ModBlocks.POTTED_TEAR_LOTUS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerCrop(ModBlocks.SAGE_CROP, SageCropBlock.AGE, 0,1,2,3);
 
         // Entities
         blockStateModelGenerator.registerSimpleState(ModBlocks.GEODE_CRUSHER);
@@ -57,5 +59,6 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Foods
         itemModelGenerator.register(ModItems.CELESTIAL_BERRIES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAGE, Models.GENERATED);
     }
 }

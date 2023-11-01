@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.justvis.mythos.Mythos;
 import net.justvis.mythos.block.custom.GeodeCrusherBlock;
+import net.justvis.mythos.block.custom.SageCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
@@ -48,6 +49,8 @@ public class ModBlocks {
             new FlowerBlock(StatusEffects.LEVITATION, 10, FabricBlockSettings.copyOf(Blocks.ALLIUM).nonOpaque().noCollision()));
     public static final Block POTTED_TEAR_LOTUS = Registry.register(Registries.BLOCK, new Identifier(Mythos.MOD_ID, "potted_tear_lotus"),
             new FlowerPotBlock(TEAR_LOTUS, FabricBlockSettings.copyOf(Blocks.POTTED_ALLIUM).nonOpaque()));
+    public static final Block SAGE_CROP = Registry.register(Registries.BLOCK, new Identifier(Mythos.MOD_ID, "sage_crop"),
+            new SageCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
 
     //Wood
     public static final Block SACRED_LOG = registerBlock("sacred_log",

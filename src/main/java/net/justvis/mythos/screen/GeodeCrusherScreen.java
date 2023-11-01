@@ -19,8 +19,8 @@ public class GeodeCrusherScreen extends HandledScreen<GeodeCrusherScreenHandler>
     @Override
     protected void init() {
         super.init();
-        titleY = 0;
-        playerInventoryTitleY = -10;
+        titleY = 10;
+        playerInventoryTitleY = 72;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class GeodeCrusherScreen extends HandledScreen<GeodeCrusherScreenHandler>
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE, x + 85, y + 30, 176, 0, 8, handler.getScaledProgress());
+            context.drawTexture(TEXTURE, x + 103, y + 30, 176, 0, 8, handler.getScaledProgress());
         }
     }
 

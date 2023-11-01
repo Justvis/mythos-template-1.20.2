@@ -1,0 +1,11 @@
+{
+  "type": "mythos:geode_crushing",
+  "ingredients": [
+    {
+    "item": "mythos:primal_geode"
+  }
+  ],
+  "output": {
+    "item": "minecraft:iron_ingot"
+  }
+}

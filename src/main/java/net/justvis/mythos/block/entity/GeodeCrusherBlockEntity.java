@@ -6,7 +6,6 @@ import net.justvis.mythos.recipe.GeodeCrusherRecipe;
 import net.justvis.mythos.screen.GeodeCrusherScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
@@ -29,13 +28,15 @@ import java.util.Optional;
 
 public class GeodeCrusherBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
 
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2, ItemStack.EMPTY);
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(4, ItemStack.EMPTY);
 
     private static final int INPUT_SLOT = 0;
     private static final int OUTPUT_SLOT = 1;
+    private static final int OUTPUT_SLOT2 = 2;
+    private static final int OUTPUT_SLOT3 = 3;
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 72;
+    private int maxProgress = 200;
 
 
     public GeodeCrusherBlockEntity(BlockPos pos, BlockState state) {
@@ -134,6 +135,12 @@ public class GeodeCrusherBlockEntity extends BlockEntity implements ExtendedScre
 
         this.setStack(OUTPUT_SLOT, new ItemStack(recipe.get().value().getResult(null).getItem(),
                 getStack(OUTPUT_SLOT).getCount() + recipe.get().value().getResult(null).getCount()));
+
+        double test = Math.random() * 20;
+        if (test < 5)
+            this.setStack(OUTPUT_SLOT2, new ItemStack(ModItems.DREAMSHARD, getStack(OUTPUT_SLOT2).getCount() + 1));
+        if (test < 10)
+            this.setStack(OUTPUT_SLOT3, new ItemStack(ModItems.RUBY, getStack(OUTPUT_SLOT3).getCount() + 1));
     }
 
     private boolean hasCraftingFinished() {
@@ -145,10 +152,14 @@ public class GeodeCrusherBlockEntity extends BlockEntity implements ExtendedScre
     }
 
     private boolean hasRecipe() {
+        return checkOutput();
+    }
+
+    private boolean checkOutput() {
         Optional<RecipeEntry<GeodeCrusherRecipe>> recipe = getCurrentRecipe();
 
-        return recipe.isPresent() && canInsertAmountIntoOutputSlot(recipe.get().value().getResult(null))
-                && canInsertItemIntoOutputSlot(recipe.get().value().getResult(null).getItem());
+        return recipe.isPresent() && canInsertAmountIntoOutputSlot1(recipe.get().value().getResult(null))
+                && canInsertItemIntoOutputSlot1(recipe.get().value().getResult(null).getItem());
     }
 
     private Optional<RecipeEntry<GeodeCrusherRecipe>> getCurrentRecipe() {
@@ -160,15 +171,33 @@ public class GeodeCrusherBlockEntity extends BlockEntity implements ExtendedScre
         return getWorld().getRecipeManager().getFirstMatch(GeodeCrusherRecipe.Type.INSTANCE, inv, getWorld());
     }
 
-    private boolean canInsertItemIntoOutputSlot(Item item) {
+    private boolean isOutputSlotEmptyOrReceivable() {
+        return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount()
+                || this.getStack(OUTPUT_SLOT2).isEmpty() || this.getStack(OUTPUT_SLOT2).getCount() < this.getStack(OUTPUT_SLOT2).getMaxCount()
+                || this.getStack(OUTPUT_SLOT3).isEmpty() || this.getStack(OUTPUT_SLOT3).getCount() < this.getStack(OUTPUT_SLOT3).getMaxCount();
+    }
+
+    private boolean canInsertItemIntoOutputSlot1(Item item) {
         return this.getStack(OUTPUT_SLOT).getItem() == item || this.getStack(OUTPUT_SLOT).isEmpty();
     }
 
-    private boolean canInsertAmountIntoOutputSlot(ItemStack result) {
+    private boolean canInsertAmountIntoOutputSlot1(ItemStack result) {
         return this.getStack(OUTPUT_SLOT).getCount() + result.getCount() <= getStack(OUTPUT_SLOT).getMaxCount();
     }
 
-    private boolean isOutputSlotEmptyOrReceivable() {
-        return this.getStack(OUTPUT_SLOT).isEmpty() || this.getStack(OUTPUT_SLOT).getCount() < this.getStack(OUTPUT_SLOT).getMaxCount();
+    private boolean canInsertItemIntoOutputSlot2(Item item) {
+        return this.getStack(OUTPUT_SLOT2).getItem() == item || this.getStack(OUTPUT_SLOT2).isEmpty();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot2(ItemStack result) {
+        return this.getStack(OUTPUT_SLOT2).getCount() + result.getCount() <= getStack(OUTPUT_SLOT2).getMaxCount();
+    }
+
+    private boolean canInsertItemIntoOutputSlot3(Item item) {
+        return this.getStack(OUTPUT_SLOT3).getItem() == item || this.getStack(OUTPUT_SLOT3).isEmpty();
+    }
+
+    private boolean canInsertAmountIntoOutputSlot3(ItemStack result) {
+        return this.getStack(OUTPUT_SLOT3).getCount() + result.getCount() <= getStack(OUTPUT_SLOT3).getMaxCount();
     }
 }

@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.justvis.mythos.Mythos;
+import net.justvis.mythos.block.ModBlocks;
+import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -18,6 +20,7 @@ public class ModItems {
     public static final Item RAW_CELESTIAL = registerItem("raw_celestial", new Item(new FabricItemSettings()));
     public static final Item CELESTIAL_INGOT = registerItem("celestial_ingot", new Item(new FabricItemSettings()));
     public static final Item PRIMAL_GEODE = registerItem("primal_geode", new Item(new FabricItemSettings()));
+    public static final Item SAGE = registerItem("sage", new Item(new FabricItemSettings()));
 
     //Glyphs
     public static final Item INERT_GLYPH = registerItem("inert_glyph", new Item(new FabricItemSettings()));
@@ -26,9 +29,9 @@ public class ModItems {
     public static final Item AERO_GLYPH = registerItem("aero_glyph", new Item(new FabricItemSettings()));
     public static final Item AQUA_GLYPH = registerItem("aqua_glyph", new Item(new FabricItemSettings()));
 
-    //Food
+    // ==== Food / Crops / Seeds ====
     public static final Item CELESTIAL_BERRIES = registerItem("celestial_berries", new Item(new FabricItemSettings().food(ModFoodComponents.CELESTIAL_BERRIES)));
-
+    public static final Item SAGE_SEEDS = registerItem("sage_seeds", new AliasedBlockItem(ModBlocks.SAGE_CROP, new FabricItemSettings()));
 
 
     // adding to minecraft tabs

@@ -3,6 +3,7 @@ package net.justvis.mythos.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.justvis.mythos.block.ModBlocks;
+import net.justvis.mythos.block.custom.SageCropBlock;
 import net.justvis.mythos.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
@@ -10,12 +11,14 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.entry.LeafEntry;
 import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.StatePredicate;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public ModLootTableProvider(FabricDataOutput dataOutput) {
@@ -39,6 +42,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
             addDrop(ModBlocks.TEAR_LOTUS);
             addPottedPlantDrops(ModBlocks.POTTED_TEAR_LOTUS);
+
+        BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.SAGE_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(SageCropBlock.AGE, 3));
+        addDrop(ModBlocks.SAGE_CROP, cropDrops(ModBlocks.SAGE_CROP, ModItems.SAGE, ModItems.SAGE_SEEDS, builder));
 
     }
 

@@ -38,8 +38,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.WRITHING_ROCK);
                         entries.add(ModBlocks.CURSED_SAND);
 
-                        //Food
+                        //Food / Reagents
                         entries.add(ModItems.CELESTIAL_BERRIES);
+                        entries.add(ModItems.SAGE_SEEDS);
+                        entries.add(ModItems.SAGE);
 
                         //Ores
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
