@@ -21,6 +21,7 @@ public class ModItems {
     public static final Item CELESTIAL_INGOT = registerItem("celestial_ingot", new Item(new FabricItemSettings()));
     public static final Item PRIMAL_GEODE = registerItem("primal_geode", new Item(new FabricItemSettings()));
     public static final Item SAGE = registerItem("sage", new Item(new FabricItemSettings()));
+    public static final Item BORAGE = registerItem("borage", new Item(new FabricItemSettings()));
 
     //Glyphs
     public static final Item INERT_GLYPH = registerItem("inert_glyph", new Item(new FabricItemSettings()));
@@ -31,7 +32,11 @@ public class ModItems {
 
     // ==== Food / Crops / Seeds ====
     public static final Item CELESTIAL_BERRIES = registerItem("celestial_berries", new Item(new FabricItemSettings().food(ModFoodComponents.CELESTIAL_BERRIES)));
+    public static final Item BUTTER = registerItem("butter", new Item(new FabricItemSettings().food(ModFoodComponents.BUTTER)));
+    public static final Item VEGETABLE_STEW = registerItem("vegetable_stew", new Item(new FabricItemSettings().food(ModFoodComponents.VEGETABLE_STEW)));
+    public static final Item PUMPKIN_SOUP = registerItem("pumpkin_soup", new Item(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_SOUP)));
     public static final Item SAGE_SEEDS = registerItem("sage_seeds", new AliasedBlockItem(ModBlocks.SAGE_CROP, new FabricItemSettings()));
+    public static final Item BORAGE_SEEDS = registerItem("borage_seeds", new AliasedBlockItem(ModBlocks.BORAGE_CROP, new FabricItemSettings()));
 
 
     // adding to minecraft tabs

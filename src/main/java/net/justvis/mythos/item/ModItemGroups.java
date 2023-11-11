@@ -37,11 +37,21 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.WRITHING_ROCK);
                         entries.add(ModBlocks.CURSED_SAND);
+                        entries.add(ModBlocks.CRUMBLING_STONE_BRICKS);
+                        entries.add(ModBlocks.FOUNDATION_STONE_BRICKS);
+                        entries.add(ModBlocks.WEATHERED_STONE_BRICKS);
 
-                        //Food / Reagents
+                        //Food
                         entries.add(ModItems.CELESTIAL_BERRIES);
+                        entries.add(ModItems.BUTTER);
+                        entries.add(ModItems.PUMPKIN_SOUP);
+                        entries.add(ModItems.VEGETABLE_STEW);
+
+                        // Food Reagents
                         entries.add(ModItems.SAGE_SEEDS);
                         entries.add(ModItems.SAGE);
+                        entries.add(ModItems.BORAGE);
+                        entries.add(ModItems.BORAGE_SEEDS);
 
                         //Ores
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
@@ -55,8 +65,14 @@ public class ModItemGroups {
                         //Block Entity
                         entries.add(ModBlocks.GEODE_CRUSHER);
 
-                        entries.add(ModBlocks.SACRED_LOG);
+                        //Wood / Trees       (REWATCH TUTORIAL FOR STRIPPABLE AND FLAMMABLE)
                         entries.add(ModBlocks.TEAR_LOTUS);
+                        entries.add(ModBlocks.ELDER_OAK_LEAVES);
+                        entries.add(ModBlocks.ELDER_OAK_PLANKS);
+                        entries.add(ModBlocks.ELDER_OAK_LOG);
+                        entries.add(ModBlocks.ELDER_OAK_WOOD);
+                        entries.add(ModBlocks.ELDER_OAK_SAPLING);
+
 
                     }).build());
     public static void registerItemGroups() {

@@ -13,12 +13,19 @@
   "item.mythos.terra_glyph": "Terra Glyph",
 
   "item.mythos.celestial_berries": "Celestial Berries",
+  "item.mythos.butter": "Butter",
+  "item.mythos.pumpkin_soup": "Pumpkin Soup",
+  "item.mythos.vegetable_tew": "Celestial Berries",
   "item.mythos.sage": "Sage",
   "item.mythos.sage_seeds": "Sage Seeds",
+  "item.mythos.borage": "Borage",
 
   "block.mythos.ruby_block": "Ruby Block",
   "block.mythos.writhing_rock": "Writhing Rock",
   "block.mythos.cursed_sand": "Cursed Sand",
+  "block.mythos.weathered_stone_bricks": "Weathered Stone Bricks",
+  "block.mythos.crumbling_stone_bricks": "Crumbling Stone Bricks",
+  "block.mythos.foundation_stone_bricks": "Foundation Stone Bricks",
 
 
   "block.mythos.nether_ruby_ore": "Nether Ruby Ore",
@@ -29,7 +36,9 @@
   "block.mythos.deepslate_primal_geode_ore": "Deepslate Primal Geode Ore",
   "block.mythos.primal_geode_ore": "Primal Geode Ore",
 
-  "block.mythos.sacred_log": "Sacred Log",
+  "block.mythos.elder_oak_wood": "Elder Oak Wood",
+  "block.mythos.elder_oak_log": "Elder Oak Log",
+  "block.mythos.elder_oak_planks": "Elder Oak Planks",
   "block.mythos.tear_lotus": "Tear Lotus",
   "block.mythos.potted_tear_lotus": "Potted Tear Lotus",
 

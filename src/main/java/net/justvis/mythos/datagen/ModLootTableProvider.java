@@ -3,6 +3,7 @@ package net.justvis.mythos.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.justvis.mythos.block.ModBlocks;
+import net.justvis.mythos.block.custom.BorageCropBlock;
 import net.justvis.mythos.block.custom.SageCropBlock;
 import net.justvis.mythos.item.ModItems;
 import net.minecraft.block.Block;
@@ -30,6 +31,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
             addDrop(ModBlocks.RUBY_BLOCK);
             addDrop(ModBlocks.WRITHING_ROCK);
             addDrop(ModBlocks.CURSED_SAND);
+            addDrop(ModBlocks.CRUMBLING_STONE_BRICKS);
+            addDrop(ModBlocks.FOUNDATION_STONE_BRICKS);
+            addDrop(ModBlocks.WEATHERED_STONE_BRICKS);
 
             //Ore Behavior
             addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY));
@@ -46,6 +50,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder builder = BlockStatePropertyLootCondition.builder(ModBlocks.SAGE_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(SageCropBlock.AGE, 3));
         addDrop(ModBlocks.SAGE_CROP, cropDrops(ModBlocks.SAGE_CROP, ModItems.SAGE, ModItems.SAGE_SEEDS, builder));
+
+        BlockStatePropertyLootCondition.Builder borageBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.BORAGE_CROP).properties(StatePredicate.Builder.create()
+                .exactMatch(BorageCropBlock.AGE, 5));
+        addDrop(ModBlocks.BORAGE_CROP, cropDrops(ModBlocks.BORAGE_CROP, ModItems.BORAGE, ModItems.BORAGE_SEEDS, borageBuilder));
 
     }
 

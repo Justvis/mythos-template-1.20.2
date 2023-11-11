@@ -3,6 +3,7 @@ package net.justvis.mythos.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.justvis.mythos.block.ModBlocks;
+import net.justvis.mythos.block.custom.BorageCropBlock;
 import net.justvis.mythos.block.custom.SageCropBlock;
 import net.justvis.mythos.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -21,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WRITHING_ROCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CURSED_SAND);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FOUNDATION_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUMBLING_STONE_BRICKS);
 
         //Ores
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
@@ -34,9 +38,17 @@ public class ModModelProvider extends FabricModelProvider {
         //Flowers / Crops
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.TEAR_LOTUS, ModBlocks.POTTED_TEAR_LOTUS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerCrop(ModBlocks.SAGE_CROP, SageCropBlock.AGE, 0,1,2,3);
+        blockStateModelGenerator.registerCrop(ModBlocks.BORAGE_CROP, BorageCropBlock.AGE, 0,1,2,3,4,5);
 
         // Entities
         blockStateModelGenerator.registerSimpleState(ModBlocks.GEODE_CRUSHER);
+
+        // WOOD
+        blockStateModelGenerator.registerLog(ModBlocks.ELDER_OAK_LOG).log(ModBlocks.ELDER_OAK_LOG).wood(ModBlocks.ELDER_OAK_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDER_OAK_PLANKS);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDER_OAK_LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.ELDER_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -59,6 +71,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         //Foods
         itemModelGenerator.register(ModItems.CELESTIAL_BERRIES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PUMPKIN_SOUP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.VEGETABLE_STEW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BUTTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAGE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BORAGE, Models.GENERATED);
     }
 }
