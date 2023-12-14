@@ -138,9 +138,9 @@ public class GeodeCrusherBlockEntity extends BlockEntity implements ExtendedScre
 
         double test = Math.random() * 20;
         if (test < 5)
-            this.setStack(OUTPUT_SLOT2, new ItemStack(ModItems.DREAMSHARD, getStack(OUTPUT_SLOT2).getCount() + 1));
+            this.setStack(OUTPUT_SLOT3, new ItemStack(ModItems.CALCIFIED_BLOOD, getStack(OUTPUT_SLOT3).getCount() + 1));
         if (test < 10)
-            this.setStack(OUTPUT_SLOT3, new ItemStack(ModItems.RUBY, getStack(OUTPUT_SLOT3).getCount() + 1));
+            this.setStack(OUTPUT_SLOT2, new ItemStack(ModItems.ARCANIST_POWDER, getStack(OUTPUT_SLOT2).getCount() + 1));
     }
 
     private boolean hasCraftingFinished() {

@@ -19,13 +19,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         // Can use different MINEABLE traits
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_BLOCK)
-                .add(ModBlocks.WRITHING_ROCK)
 
                 // Ores
                 .add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.CELESTIAL_ORE)
                 .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE)
                 .add(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE)
@@ -37,13 +34,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         // Mining Difficulty
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.NETHER_RUBY_ORE)
                 .add(ModBlocks.CELESTIAL_ORE)
                 .add(ModBlocks.DEEPSLATE_CELESTIAL_ORE)
                 .add(ModBlocks.DEEPSLATE_PRIMAL_GEODE_ORE)
                 .add(ModBlocks.PRIMAL_GEODE_ORE);
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ELDER_OAK_FENCE);
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ELDER_OAK_FENCE_GATE);
 
     }
 }

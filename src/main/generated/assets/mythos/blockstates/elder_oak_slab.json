@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mythos:block/elder_oak_slab"
+    },
+    "type=double": {
+      "model": "mythos:block/elder_oak_planks"
+    },
+    "type=top": {
+      "model": "mythos:block/elder_oak_slab_top"
+    }
+  }
+}

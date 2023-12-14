@@ -1,11 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mythos:ruby_block",
-    "mythos:writhing_rock",
     "mythos:deepslate_dreamshard_ore",
     "mythos:ruby_ore",
-    "mythos:nether_ruby_ore",
     "mythos:celestial_ore",
     "mythos:deepslate_celestial_ore",
     "mythos:deepslate_primal_geode_ore",

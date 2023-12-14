@@ -4,6 +4,9 @@
   "item.mythos.raw_celestial": "Raw Celestial",
   "item.mythos.celestial_ingot": "Celestial Ingot",
   "item.mythos.primal_geode": "Primal Geode",
+  "item.mythos.calcified_blood": "Calcified Blood",
+  "item.mythos.primal_dust": "Primal Dust",
+  "item.mythos.arcanist_powder": "Arcanist Powder",
 
 
   "item.mythos.inert_glyph": "Inert Glyph",
@@ -12,24 +15,21 @@
   "item.mythos.aqua_glyph": "Aqua Glyph",
   "item.mythos.terra_glyph": "Terra Glyph",
 
-  "item.mythos.celestial_berries": "Celestial Berries",
   "item.mythos.butter": "Butter",
   "item.mythos.pumpkin_soup": "Pumpkin Soup",
-  "item.mythos.vegetable_tew": "Celestial Berries",
+  "item.mythos.vegetable_stew": "Vegetable Stew",
   "item.mythos.sage": "Sage",
   "item.mythos.sage_seeds": "Sage Seeds",
   "item.mythos.borage": "Borage",
+  "item.mythos.herb_butter": "Herb Butter",
+  "item.mythos.herb_cooked_steak": "Herb Butter Steak",
+  "item.mythos.herb_cooked_mutton": "Herb Butter Mutton",
 
-  "block.mythos.ruby_block": "Ruby Block",
-  "block.mythos.writhing_rock": "Writhing Rock",
   "block.mythos.cursed_sand": "Cursed Sand",
   "block.mythos.weathered_stone_bricks": "Weathered Stone Bricks",
   "block.mythos.crumbling_stone_bricks": "Crumbling Stone Bricks",
   "block.mythos.foundation_stone_bricks": "Foundation Stone Bricks",
 
-
-  "block.mythos.nether_ruby_ore": "Nether Ruby Ore",
-  "block.mythos.ruby_ore": "Ruby Ore",
   "block.mythos.deepslate_dreamshard_ore": "Deepslate Dreamshard Ore",
   "block.mythos.deepslate_celestial_ore": "Deepslate Celestial Ore",
   "block.mythos.celestial_ore": "Celestial Ore",
@@ -39,6 +39,11 @@
   "block.mythos.elder_oak_wood": "Elder Oak Wood",
   "block.mythos.elder_oak_log": "Elder Oak Log",
   "block.mythos.elder_oak_planks": "Elder Oak Planks",
+  "block.mythos.elder_oak_slab": "Elder Oak Slab",
+  "block.mythos.elder_oak_stairs": "Elder Oak Stairs",
+  "block.mythos.elder_oak_fence": "Elder Oak Fence",
+  "block.mythos.elder_oak_fence_gate": "Elder Oak Fence Gate",
+  "block.mythos.elder_oak_leaves": "Elder Oak Leaves",
   "block.mythos.tear_lotus": "Tear Lotus",
   "block.mythos.potted_tear_lotus": "Potted Tear Lotus",
 

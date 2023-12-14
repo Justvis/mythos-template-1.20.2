@@ -16,7 +16,7 @@ public class ModItemGroups {
     public static final ItemGroup MYTHOS_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(Mythos.MOD_ID, "mythos.itemgroup"),
             FabricItemGroup.builder().displayName(Text.translatable("Mythos"))
-                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.DREAMSHARD)).entries((displayContext, entries) -> {
 
                         //Items
                         entries.add(ModItems.RUBY);
@@ -24,6 +24,9 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_CELESTIAL);
                         entries.add(ModItems.CELESTIAL_INGOT);
                         entries.add(ModItems.PRIMAL_GEODE);
+                        entries.add(ModItems.PRIMAL_DUST);
+                        entries.add(ModItems.CALCIFIED_BLOOD);
+                        entries.add(ModItems.ARCANIST_POWDER);
 
                         //Glyphs
                         entries.add(ModItems.INERT_GLYPH);
@@ -34,18 +37,19 @@ public class ModItemGroups {
 
 
                         //Blocks
-                        entries.add(ModBlocks.RUBY_BLOCK);
-                        entries.add(ModBlocks.WRITHING_ROCK);
                         entries.add(ModBlocks.CURSED_SAND);
                         entries.add(ModBlocks.CRUMBLING_STONE_BRICKS);
                         entries.add(ModBlocks.FOUNDATION_STONE_BRICKS);
                         entries.add(ModBlocks.WEATHERED_STONE_BRICKS);
+                        entries.add(ModBlocks.SCHOLAR_STONE);
 
                         //Food
-                        entries.add(ModItems.CELESTIAL_BERRIES);
-                        entries.add(ModItems.BUTTER);
                         entries.add(ModItems.PUMPKIN_SOUP);
                         entries.add(ModItems.VEGETABLE_STEW);
+                        entries.add(ModItems.HERB_BUTTER);
+                        entries.add(ModItems.BUTTER);
+                        entries.add(ModItems.HERB_COOKED_MUTTON);
+                        entries.add(ModItems.HERB_COOKED_STEAK);
 
                         // Food Reagents
                         entries.add(ModItems.SAGE_SEEDS);
@@ -54,7 +58,6 @@ public class ModItemGroups {
                         entries.add(ModItems.BORAGE_SEEDS);
 
                         //Ores
-                        entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModBlocks.RUBY_ORE);
                         entries.add(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
                         entries.add(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
@@ -69,6 +72,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TEAR_LOTUS);
                         entries.add(ModBlocks.ELDER_OAK_LEAVES);
                         entries.add(ModBlocks.ELDER_OAK_PLANKS);
+                        entries.add(ModBlocks.ELDER_OAK_STAIRS);
+                        entries.add(ModBlocks.ELDER_OAK_SLAB);
+                        entries.add(ModBlocks.ELDER_OAK_FENCE);
+                        entries.add(ModBlocks.ELDER_OAK_FENCE_GATE);
                         entries.add(ModBlocks.ELDER_OAK_LOG);
                         entries.add(ModBlocks.ELDER_OAK_WOOD);
                         entries.add(ModBlocks.ELDER_OAK_SAPLING);

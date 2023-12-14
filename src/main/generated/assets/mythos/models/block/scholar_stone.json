@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mythos:block/writhing_rock"
+    "all": "mythos:block/scholar_stone"
   }
 }

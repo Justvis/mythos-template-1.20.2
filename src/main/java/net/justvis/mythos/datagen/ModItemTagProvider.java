@@ -20,5 +20,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(ModBlocks.ELDER_OAK_PLANKS.asItem());
 
+        getOrCreateTagBuilder(ItemTags.LOGS)
+                .add(ModBlocks.ELDER_OAK_LOG.asItem());
+
+        getOrCreateTagBuilder(ItemTags.FENCES)
+                .add(ModBlocks.ELDER_OAK_FENCE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.FENCE_GATES)
+                .add(ModBlocks.ELDER_OAK_FENCE_GATE.asItem());
+
     }
 }

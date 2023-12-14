@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "mythos:block/elder_oak_planks",
+    "side": "mythos:block/elder_oak_planks",
+    "top": "mythos:block/elder_oak_planks"
+  }
+}

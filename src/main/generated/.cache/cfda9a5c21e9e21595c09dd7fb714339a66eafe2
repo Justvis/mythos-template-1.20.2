@@ -1,16 +1,17 @@
-// 1.20.2	2023-11-11T01:30:43.9568597	Mythos/Block Loot Tables
+// 1.20.2	2023-12-11T20:03:09.5427709	Mythos/Block Loot Tables
 fb10e66edd31835155f4224c1e70413d6aee792d data\mythos\loot_tables\blocks\sage_crop.json
 e6984d36a61a8f99d26331ef342e9277fbeac3c2 data\mythos\loot_tables\blocks\cursed_sand.json
 9f087cd892c91766663ab4f7dede013c87cb8a43 data\mythos\loot_tables\blocks\deepslate_dreamshard_ore.json
-0b38075db0715268aebdfc506f3aa3fe94f8291d data\mythos\loot_tables\blocks\ruby_block.json
-bcf978ee971ec62c43c906bbe599ea741c799ae6 data\mythos\loot_tables\blocks\writhing_rock.json
 c82969857fe043931d9cb5853c7eacf1c4f45ed6 data\mythos\loot_tables\blocks\weathered_stone_bricks.json
+2d25496f9fb4c8374ac0535d7d8c9c6e3b6b9456 data\mythos\loot_tables\blocks\elder_oak_slab.json
 347cb98892e17b107f23f42e76eb9878258f30b4 data\mythos\loot_tables\blocks\deepslate_celestial_ore.json
 ac39e4e62a582f1cb3af8b0ce6f4b29adce22f3f data\mythos\loot_tables\blocks\primal_geode_ore.json
 b4435ece5d466e85ec3a50a0c852c406b570d574 data\mythos\loot_tables\blocks\foundation_stone_bricks.json
-c780f4960085e1534442fa5696df581a0a32a943 data\mythos\loot_tables\blocks\nether_ruby_ore.json
+9ad32d275f2441da9e5b983eed972eb89d06402b data\mythos\loot_tables\blocks\elder_oak_fence.json
+f528f8c0050b30ff1ea2f207214fafc6014ff86e data\mythos\loot_tables\blocks\elder_oak_stairs.json
 246159cf9dbd53ae64a8d10e39d483582ae63efe data\mythos\loot_tables\blocks\borage_crop.json
 5f7b1d53ceeaf7114f901c1aae96b148ec1abbc3 data\mythos\loot_tables\blocks\deepslate_primal_geode_ore.json
+3a5219aa0cf145e70fda9ef15654dc396069f791 data\mythos\loot_tables\blocks\elder_oak_fence_gate.json
 e8fcb16b85047aafd05385ff4dfecc7130eaced0 data\mythos\loot_tables\blocks\potted_tear_lotus.json
 dae2cf47f1fc2306d8c08d8115345136632843d3 data\mythos\loot_tables\blocks\crumbling_stone_bricks.json
 26b02ec7d8fa9b0c8ecd2f4d8395092e3cf983fd data\mythos\loot_tables\blocks\ruby_ore.json

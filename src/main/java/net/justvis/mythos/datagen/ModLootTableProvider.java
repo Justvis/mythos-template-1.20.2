@@ -28,8 +28,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-            addDrop(ModBlocks.RUBY_BLOCK);
-            addDrop(ModBlocks.WRITHING_ROCK);
             addDrop(ModBlocks.CURSED_SAND);
             addDrop(ModBlocks.CRUMBLING_STONE_BRICKS);
             addDrop(ModBlocks.FOUNDATION_STONE_BRICKS);
@@ -37,7 +35,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
             //Ore Behavior
             addDrop(ModBlocks.RUBY_ORE, copperLikeOreDrops(ModBlocks.RUBY_ORE, ModItems.RUBY));
-            addDrop(ModBlocks.NETHER_RUBY_ORE, copperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RUBY));
             addDrop(ModBlocks.DEEPSLATE_DREAMSHARD_ORE, diamondLikeOreDrops(ModBlocks.DEEPSLATE_DREAMSHARD_ORE, ModItems.DREAMSHARD));
             addDrop(ModBlocks.DEEPSLATE_CELESTIAL_ORE, ironLikeOreDrops(ModBlocks.DEEPSLATE_CELESTIAL_ORE, ModItems.RAW_CELESTIAL));
             addDrop(ModBlocks.CELESTIAL_ORE, ironLikeOreDrops(ModBlocks.CELESTIAL_ORE, ModItems.RAW_CELESTIAL));
@@ -54,6 +51,13 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         BlockStatePropertyLootCondition.Builder borageBuilder = BlockStatePropertyLootCondition.builder(ModBlocks.BORAGE_CROP).properties(StatePredicate.Builder.create()
                 .exactMatch(BorageCropBlock.AGE, 5));
         addDrop(ModBlocks.BORAGE_CROP, cropDrops(ModBlocks.BORAGE_CROP, ModItems.BORAGE, ModItems.BORAGE_SEEDS, borageBuilder));
+
+        // Wood
+        addDrop(ModBlocks.ELDER_OAK_STAIRS);
+        addDrop(ModBlocks.ELDER_OAK_FENCE);
+        addDrop(ModBlocks.ELDER_OAK_FENCE_GATE);
+        addDrop(ModBlocks.ELDER_OAK_SLAB, slabDrops(ModBlocks.ELDER_OAK_SLAB));
+
 
     }
 

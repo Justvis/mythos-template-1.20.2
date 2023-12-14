@@ -18,10 +18,6 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 public class ModBlocks {
 
     //All Block Listings
-    public static final Block RUBY_BLOCK = registerBlock("ruby_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
-    public static final Block WRITHING_ROCK = registerBlock("writhing_rock",
-            new Block(FabricBlockSettings.copyOf(Blocks.DIAMOND_BLOCK)));
     public static final Block CURSED_SAND = registerBlock("cursed_sand",
             new Block(FabricBlockSettings.copyOf(Blocks.SAND)));
 
@@ -31,6 +27,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
     public static final Block FOUNDATION_STONE_BRICKS = registerBlock("foundation_stone_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block SCHOLAR_STONE = registerBlock("scholar_stone",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
 
     //Block Entity
     public static final Block GEODE_CRUSHER = registerBlock("geode_crusher",
@@ -39,8 +37,6 @@ public class ModBlocks {
     // Ores
     public static final Block RUBY_ORE = registerBlock("ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.0f), UniformIntProvider.create(2,5)));
-    public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE).strength(2.0f), UniformIntProvider.create(3,5)));
     public static final Block DEEPSLATE_DREAMSHARD_ORE = registerBlock("deepslate_dreamshard_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DIAMOND_ORE), UniformIntProvider.create(3,5)));
     public static final Block CELESTIAL_ORE = registerBlock("celestial_ore",
@@ -76,6 +72,15 @@ public class ModBlocks {
 
     public static final Block ELDER_OAK_SAPLING = registerBlock("elder_oak_sapling",
             new SaplingBlock(null, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).strength(1)));
+
+    public static final Block ELDER_OAK_STAIRS = registerBlock("elder_oak_stairs",
+            new StairsBlock(ModBlocks.ELDER_OAK_PLANKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+    public static final Block ELDER_OAK_SLAB = registerBlock("elder_oak_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)));
+    public static final Block ELDER_OAK_FENCE = registerBlock("elder_oak_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)));
+    public static final Block ELDER_OAK_FENCE_GATE = registerBlock("elder_oak_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE), WoodType.OAK));
 
 
 

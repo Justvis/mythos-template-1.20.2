@@ -17,17 +17,17 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        // Texture Pools
+        BlockStateModelGenerator.BlockTexturePool elderWoodTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.ELDER_OAK_PLANKS);
 
         //Blocks
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WRITHING_ROCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CURSED_SAND);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FOUNDATION_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WEATHERED_STONE_BRICKS);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRUMBLING_STONE_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SCHOLAR_STONE);
 
-        //Ores
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
+        // Ores
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_DREAMSHARD_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_CELESTIAL_ORE);
@@ -45,7 +45,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         // WOOD
         blockStateModelGenerator.registerLog(ModBlocks.ELDER_OAK_LOG).log(ModBlocks.ELDER_OAK_LOG).wood(ModBlocks.ELDER_OAK_WOOD);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDER_OAK_PLANKS);
+        elderWoodTexturePool.stairs(ModBlocks.ELDER_OAK_STAIRS);
+        elderWoodTexturePool.slab(ModBlocks.ELDER_OAK_SLAB);
+        elderWoodTexturePool.fence(ModBlocks.ELDER_OAK_FENCE);
+        elderWoodTexturePool.fenceGate(ModBlocks.ELDER_OAK_FENCE_GATE);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ELDER_OAK_LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.ELDER_OAK_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -60,6 +63,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_CELESTIAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CELESTIAL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRIMAL_GEODE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRIMAL_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ARCANIST_POWDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CALCIFIED_BLOOD, Models.GENERATED);
 
         //Glyphs
         itemModelGenerator.register(ModItems.INERT_GLYPH, Models.GENERATED);
@@ -68,11 +74,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TERRA_GLYPH, Models.GENERATED);
         itemModelGenerator.register(ModItems.PYRO_GLYPH, Models.GENERATED);
 
-
         //Foods
         itemModelGenerator.register(ModItems.CELESTIAL_BERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.PUMPKIN_SOUP, Models.GENERATED);
         itemModelGenerator.register(ModItems.VEGETABLE_STEW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HERB_BUTTER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HERB_COOKED_MUTTON, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HERB_COOKED_STEAK, Models.GENERATED);
         itemModelGenerator.register(ModItems.BUTTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.SAGE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BORAGE, Models.GENERATED);

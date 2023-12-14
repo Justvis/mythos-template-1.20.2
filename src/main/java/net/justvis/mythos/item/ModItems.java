@@ -22,6 +22,9 @@ public class ModItems {
     public static final Item PRIMAL_GEODE = registerItem("primal_geode", new Item(new FabricItemSettings()));
     public static final Item SAGE = registerItem("sage", new Item(new FabricItemSettings()));
     public static final Item BORAGE = registerItem("borage", new Item(new FabricItemSettings()));
+    public static final Item CALCIFIED_BLOOD = registerItem("calcified_blood", new Item(new FabricItemSettings()));
+    public static final Item PRIMAL_DUST = registerItem("primal_dust", new Item(new FabricItemSettings()));
+    public static final Item ARCANIST_POWDER = registerItem("arcanist_powder", new Item(new FabricItemSettings()));
 
     //Glyphs
     public static final Item INERT_GLYPH = registerItem("inert_glyph", new Item(new FabricItemSettings()));
@@ -35,6 +38,9 @@ public class ModItems {
     public static final Item BUTTER = registerItem("butter", new Item(new FabricItemSettings().food(ModFoodComponents.BUTTER)));
     public static final Item VEGETABLE_STEW = registerItem("vegetable_stew", new Item(new FabricItemSettings().food(ModFoodComponents.VEGETABLE_STEW)));
     public static final Item PUMPKIN_SOUP = registerItem("pumpkin_soup", new Item(new FabricItemSettings().food(ModFoodComponents.PUMPKIN_SOUP)));
+    public static final Item HERB_BUTTER = registerItem("herb_butter", new Item(new FabricItemSettings().food(ModFoodComponents.HERB_BUTTER)));
+    public static final Item HERB_COOKED_MUTTON = registerItem("herb_cooked_mutton", new Item(new FabricItemSettings().food(ModFoodComponents.HERB_COOKED_MUTTON)));
+    public static final Item HERB_COOKED_STEAK = registerItem("herb_cooked_steak", new Item(new FabricItemSettings().food(ModFoodComponents.HERB_COOKED_STEAK)));
     public static final Item SAGE_SEEDS = registerItem("sage_seeds", new AliasedBlockItem(ModBlocks.SAGE_CROP, new FabricItemSettings()));
     public static final Item BORAGE_SEEDS = registerItem("borage_seeds", new AliasedBlockItem(ModBlocks.BORAGE_CROP, new FabricItemSettings()));
 
