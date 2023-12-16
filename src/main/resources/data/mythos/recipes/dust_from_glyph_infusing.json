@@ -1,0 +1,11 @@
+{
+  "type": "mythos:glyph_infusing",
+  "ingredients": [
+    {
+    "item": "mythos:primal_geode"
+  }
+  ],
+  "output": {
+    "item": "mythos:primal_dust"
+  }
+}

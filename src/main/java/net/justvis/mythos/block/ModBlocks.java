@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.justvis.mythos.Mythos;
 import net.justvis.mythos.block.custom.BorageCropBlock;
 import net.justvis.mythos.block.custom.GeodeCrusherBlock;
+import net.justvis.mythos.block.custom.GlyphInfuserBlock;
 import net.justvis.mythos.block.custom.SageCropBlock;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -33,6 +34,8 @@ public class ModBlocks {
     //Block Entity
     public static final Block GEODE_CRUSHER = registerBlock("geode_crusher",
     new GeodeCrusherBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
+    public static final Block GLYPH_INFUSER = registerBlock("glyph_infuser",
+    new GlyphInfuserBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque()));
 
     // Ores
     public static final Block RUBY_ORE = registerBlock("ruby_ore",

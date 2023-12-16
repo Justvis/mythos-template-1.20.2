@@ -12,6 +12,10 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, new Identifier(Mythos.MOD_ID, "gem_polishing"),
                     new ExtendedScreenHandlerType<>(GeodeCrusherScreenHandler::new));
 
+    public static final ScreenHandlerType<GlyphInfuserScreenHandler> GLYPH_INFUSER_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, new Identifier(Mythos.MOD_ID, "glyph_infusing"),
+                    new ExtendedScreenHandlerType<>(GlyphInfuserScreenHandler::new));
+
     public static void registerScreenHandlers() {
         Mythos.LOGGER.info("Registering Screen Handlers for " + Mythos.MOD_ID);
     }

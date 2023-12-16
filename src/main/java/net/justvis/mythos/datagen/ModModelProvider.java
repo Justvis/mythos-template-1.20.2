@@ -42,6 +42,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         // Entities
         blockStateModelGenerator.registerSimpleState(ModBlocks.GEODE_CRUSHER);
+        blockStateModelGenerator.registerSimpleState(ModBlocks.GLYPH_INFUSER);
 
         // WOOD
         blockStateModelGenerator.registerLog(ModBlocks.ELDER_OAK_LOG).log(ModBlocks.ELDER_OAK_LOG).wood(ModBlocks.ELDER_OAK_WOOD);

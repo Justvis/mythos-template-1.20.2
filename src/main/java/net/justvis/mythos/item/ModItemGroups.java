@@ -67,6 +67,7 @@ public class ModItemGroups {
 
                         //Block Entity
                         entries.add(ModBlocks.GEODE_CRUSHER);
+                        entries.add(ModBlocks.GLYPH_INFUSER);
 
                         //Wood / Trees       (REWATCH TUTORIAL FOR STRIPPABLE AND FLAMMABLE)
                         entries.add(ModBlocks.TEAR_LOTUS);

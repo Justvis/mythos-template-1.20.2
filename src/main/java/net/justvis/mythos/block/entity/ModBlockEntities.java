@@ -14,6 +14,11 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(GeodeCrusherBlockEntity::new,
                             ModBlocks.GEODE_CRUSHER).build());
 
+    public static final BlockEntityType<GlyphInfuserBlockEntity> GLYPH_INFUSER_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(Mythos.MOD_ID, "glyph_infusing_be"),
+                    FabricBlockEntityTypeBuilder.create(GlyphInfuserBlockEntity::new,
+                            ModBlocks.GLYPH_INFUSER).build());
+
     public static void registerBlockEntities() {
         Mythos.LOGGER.info("Registering Block Entities for " + Mythos.MOD_ID);
     }
