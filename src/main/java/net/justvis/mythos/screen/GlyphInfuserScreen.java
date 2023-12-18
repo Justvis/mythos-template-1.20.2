@@ -38,7 +38,10 @@ public class GlyphInfuserScreen extends HandledScreen<GlyphInfuserScreenHandler>
 
     private void renderProgressArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE, x + 103, y + 30, 176, 0, 8, handler.getScaledProgress());
+            //context.drawTexture(TEXTURE, x + 99, y + 33, 176, 0, 50, handler.getScaledProgress());
+            //context.drawTexture(TEXTURE, x + 99 - handler.getScaledProgress(), y + 33, 176, 0, handler.getScaledProgress(), 16);
+            context.drawTexture(TEXTURE, x + 103, y + 33, 176, 0, handler.getScaledProgress(), 20);
+
         }
     }
 

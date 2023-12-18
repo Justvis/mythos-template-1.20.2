@@ -1,4 +1,4 @@
-// 1.20.2	2023-12-14T22:33:55.738357	Mythos/Model Definitions
+// 1.20.2	2023-12-17T19:53:54.8878663	Mythos/Model Definitions
 e28d4df56b3e2028fe581156e6d7ebfe729fe86c assets\mythos\models\block\primal_geode_ore.json
 101b0ce988756e1f7f8fb704e6ebd96d3f6a9456 assets\mythos\models\block\potted_tear_lotus.json
 f4dd56391823e2e55c74f4821f35bc6eceeee842 assets\mythos\models\item\elder_oak_leaves.json
@@ -60,8 +60,8 @@ a5739e317cae3f550da8ba188438c9df1631f9a2 assets\mythos\models\block\scholar_ston
 62ff10c181eab106c2f3d392961c657b0fc7b41b assets\mythos\models\block\weathered_stone_bricks.json
 ab1e2b4624770c1ac4853229663f9153104bd184 assets\mythos\models\item\borage_seeds.json
 5c2ba45bd226d729fc4ad011cdaf867fed71aebb assets\mythos\blockstates\tear_lotus.json
-fb2db6e2748d6a93340519120702cd866fa09c09 assets\mythos\blockstates\celestial_ore.json
 1e00cbb52220d76a323a33c98dea27bb48ad1026 assets\mythos\blockstates\scholar_stone.json
+fb2db6e2748d6a93340519120702cd866fa09c09 assets\mythos\blockstates\celestial_ore.json
 a7e0bfc627693cfe88948797f0cbaed62e36de51 assets\mythos\models\item\primal_geode.json
 1de1927add7fa9e0943837dea4f071c571687e9d assets\mythos\models\block\borage_crop_stage4.json
 1ded44974a750968ad892350928e7bda31331f1f assets\mythos\blockstates\deepslate_celestial_ore.json
@@ -84,8 +84,8 @@ c4652039fedca9efca2f6329710f9eb4a3e14c39 assets\mythos\blockstates\cursed_sand.j
 b0a016c68e5119af0181bfb2a0c9c5890224d43a assets\mythos\models\block\elder_oak_fence_inventory.json
 46862fa63fa552db22b84bad6501a2a008ee3bd1 assets\mythos\models\item\herb_cooked_steak.json
 43e05695df067f31cba7aed82ed4954920b96ca6 assets\mythos\models\item\scholar_stone.json
-fca89ba24a51d37acb678632c384f994d33af012 assets\mythos\models\block\elder_oak_wood.json
 1e826b954412227c6020a654a6775c09351ce307 assets\mythos\models\item\calcified_blood.json
+fca89ba24a51d37acb678632c384f994d33af012 assets\mythos\models\block\elder_oak_wood.json
 99c78bc9fb196dbb2abc1eb17d2f651c4cecf1e7 assets\mythos\models\item\elder_oak_stairs.json
 28ce6a2c9c5adff522a85502b0e0912e7e039209 assets\mythos\models\item\elder_oak_sapling.json
 5dd80e7e34ff56597fdf116c38805d5c40780a6f assets\mythos\blockstates\foundation_stone_bricks.json
@@ -98,8 +98,8 @@ e1bb13fc3191b695453c92562544d89d95771521 assets\mythos\models\item\deepslate_cel
 6f8e988d01617089235ddadfef9a570465aeddc9 assets\mythos\models\item\vegetable_stew.json
 867b287fa2bb6c07ac24f91e94f7d948cb2ad8bc assets\mythos\models\item\sage_seeds.json
 35c8686fb22e9aa4286373e26117258274ba1b8c assets\mythos\models\block\elder_oak_stairs.json
-0def501a115a4c9c64fb1a767641ac5951676d44 assets\mythos\blockstates\crumbling_stone_bricks.json
 32833c544958a336c956fb0d1c0a1685a156ef2d assets\mythos\blockstates\elder_oak_wood.json
+0def501a115a4c9c64fb1a767641ac5951676d44 assets\mythos\blockstates\crumbling_stone_bricks.json
 cd6ad40a28bc19c1641ee047b8f41db66ff87be5 assets\mythos\blockstates\deepslate_dreamshard_ore.json
 dd2414079c8ec60a979e3e43ec9b56c336aa9afa assets\mythos\blockstates\elder_oak_fence_gate.json
 6483509c9a564fd98ed468583c8e3430fb17bfe5 assets\mythos\models\block\sage_crop_stage2.json

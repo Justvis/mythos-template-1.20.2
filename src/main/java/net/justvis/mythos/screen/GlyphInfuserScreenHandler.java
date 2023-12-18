@@ -1,6 +1,7 @@
 package net.justvis.mythos.screen;
 
 import net.justvis.mythos.block.entity.GlyphInfuserBlockEntity;
+import net.justvis.mythos.item.ModItems;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -30,12 +31,9 @@ public final GlyphInfuserBlockEntity blockEntity;
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((GlyphInfuserBlockEntity) blockEntity);
 
-        this.addSlot(new Slot(inventory, 0, 98, 11));
-        //this.addSlot(new Slot(inventory, 3, 80, 11));
-        this.addSlot(new OutputSlot(inventory, 1, 80, 59));
-        this.addSlot(new OutputSlot(inventory, 2, 98, 59));
-        //this.addSlot(new Slot(inventory, 3, 116, 59));
-        this.addSlot(new OutputSlot(inventory, 3, 116, 59));
+        this.addSlot(new Slot(inventory, 0, 79, 19));
+        this.addSlot(new ControlledSlot(inventory, 1, 140, 37, null));
+        this.addSlot(new ControlledSlot(inventory, 2, 79, 56, ModItems.INERT_GLYPH));
 
 
         addPlayerInventory(playerInventory);
@@ -76,7 +74,7 @@ public final GlyphInfuserBlockEntity blockEntity;
     public int getScaledProgress() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
-        int progressArrowSize = 26; // This is the width in pixels of your arrow
+        int progressArrowSize = 22; // This is the width in pixels of your arrow
 
         return maxProgress != 0 && progress != 0 ? progress * progressArrowSize / maxProgress : 0;
     }

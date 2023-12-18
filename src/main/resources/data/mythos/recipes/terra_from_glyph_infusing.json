@@ -1,0 +1,14 @@
+{
+  "type": "mythos:glyph_infusing",
+  "ingredients": [
+    {
+    "item": "minecraft:coal_block"
+    },
+    {
+      "item": "mythos:inert_glyph"
+    }
+  ],
+  "output": {
+    "item": "mythos:terra_glyph"
+  }
+}

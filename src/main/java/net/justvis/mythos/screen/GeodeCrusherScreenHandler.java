@@ -32,10 +32,10 @@ public final GeodeCrusherBlockEntity blockEntity;
 
         this.addSlot(new Slot(inventory, 0, 98, 11));
         //this.addSlot(new Slot(inventory, 3, 80, 11));
-        this.addSlot(new OutputSlot(inventory, 1, 80, 59));
-        this.addSlot(new OutputSlot(inventory, 2, 98, 59));
+        this.addSlot(new ControlledSlot(inventory, 1, 80, 59,null));
+        this.addSlot(new ControlledSlot(inventory, 2, 98, 59,null));
         //this.addSlot(new Slot(inventory, 3, 116, 59));
-        this.addSlot(new OutputSlot(inventory, 3, 116, 59));
+        this.addSlot(new ControlledSlot(inventory, 3, 116, 59,null));
 
 
         addPlayerInventory(playerInventory);

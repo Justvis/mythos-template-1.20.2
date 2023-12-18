@@ -2,7 +2,10 @@
   "type": "mythos:glyph_infusing",
   "ingredients": [
     {
-      "item": "mythos:primal_geode"
+    "item": "minecraft:diamond"
+    },
+    {
+      "item": "minecraft:diamond"
     }
   ],
   "output": {

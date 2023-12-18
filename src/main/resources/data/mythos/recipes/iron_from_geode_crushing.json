@@ -2,10 +2,10 @@
   "type": "mythos:geode_crushing",
   "ingredients": [
     {
-    "item": "minecraft:diamond"
+    "item": "mythos:primal_geode"
   }
   ],
   "output": {
-    "item": "mythos:primal_dust"
+    "item": "minecraft:diamond"
   }
 }
